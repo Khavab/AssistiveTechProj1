@@ -1,0 +1,36 @@
+<!DOCTYPE html>>
+<html>
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Assistive Tech</title>
+    
+        <div id="wrapper">
+          <div class="overlay"></div>
+    </head>
+    <body id="background">
+        <div class="elements-container">
+            <p id="test">Hello!</p>
+            <button id="startbutton" onclick="gameFunc()">Start the Game!</button>
+        </div>
+
+        <script>
+            function gameFunc() {
+                console.log("game started");
+                document.getElementById("startbutton").innerhtml = "I finished!"
+                setInterval(flipColors, 10000);
+            }
+
+            function flipColors() {
+                if ( document.body.style.background == "red" ){
+                    document.body.style.background = "lightgreen";
+                }
+                else {
+                    document.body.style.background = "red";
+                }
+            }
+        </script>
+    </body>
+</html>
+
