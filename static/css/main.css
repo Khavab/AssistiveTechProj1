@@ -8,3 +8,8 @@ div.elements-container {
     display: flex;
     flex-direction: column;
 }
+
+.nav-wrapper{
+    display: flex;
+    flex-direction: row;
+}
